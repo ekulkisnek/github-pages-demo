@@ -1,0 +1,147 @@
+---
+layout: default
+title: "GitHub Pages Demo - Full Feature Showcase"
+description: "Comprehensive demonstration of GitHub Pages free tier capabilities"
+---
+
+<div class="hero-section">
+  <div class="container">
+    <h1 class="hero-title">GitHub Pages Demo</h1>
+    <p class="hero-subtitle">Complete showcase of free tier GitHub Pages features</p>
+    <div class="hero-buttons">
+      <a href="/features/" class="btn btn-primary">Explore Features</a>
+      <a href="/tutorials/" class="btn btn-secondary">View Tutorials</a>
+    </div>
+  </div>
+</div>
+
+<section class="features-overview">
+  <div class="container">
+    <h2>What This Demo Includes</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">📝</div>
+        <h3>Jekyll Integration</h3>
+        <p>Full Jekyll static site generator with themes, plugins, and collections</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>Custom Styling</h3>
+        <p>Responsive CSS with modern design patterns and animations</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Interactive JavaScript</h3>
+        <p>Dynamic content, forms, and client-side functionality</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <h3>Mobile Responsive</h3>
+        <p>Optimized for all devices with progressive enhancement</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <h3>SEO Optimized</h3>
+        <p>Meta tags, sitemaps, and search engine optimization</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚀</div>
+        <h3>Auto Deployment</h3>
+        <p>GitHub Actions for automated builds and deployments</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="live-demo">
+  <div class="container">
+    <h2>Live Interactive Demo</h2>
+    <div class="demo-container">
+      <div class="demo-controls">
+        <button id="color-changer" class="demo-btn">Change Theme</button>
+        <button id="text-animator" class="demo-btn">Animate Text</button>
+        <button id="counter-reset" class="demo-btn">Reset Counter</button>
+      </div>
+      <div class="demo-content">
+        <div id="demo-text" class="demo-text">Welcome to GitHub Pages!</div>
+        <div class="counter-section">
+          <span>Click Counter: </span>
+          <span id="click-counter">0</span>
+        </div>
+        <div id="color-preview" class="color-preview"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="github-features">
+  <div class="container">
+    <h2>GitHub Pages Free Tier Features</h2>
+    <div class="feature-list">
+      <div class="feature-item">
+        <h3>✅ Custom Domains</h3>
+        <p>Use your own domain name with free SSL certificates</p>
+      </div>
+      <div class="feature-item">
+        <h3>✅ Jekyll Support</h3>
+        <p>Built-in Jekyll static site generator with 100+ plugins</p>
+      </div>
+      <div class="feature-item">
+        <h3>✅ GitHub Actions</h3>
+        <p>Automated builds and deployments with custom workflows</p>
+      </div>
+      <div class="feature-item">
+        <h3>✅ HTTPS by Default</h3>
+        <p>Automatic SSL certificates for all sites</p>
+      </div>
+      <div class="feature-item">
+        <h3>✅ CDN Distribution</h3>
+        <p>Global content delivery network for fast loading</p>
+      </div>
+      <div class="feature-item">
+        <h3>✅ Version Control</h3>
+        <p>Full Git integration with branch-based deployments</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// Interactive demo JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+  let clickCount = 0;
+  let colorIndex = 0;
+  const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57', '#ff9ff3'];
+  
+  // Color changer
+  document.getElementById('color-changer').addEventListener('click', function() {
+    colorIndex = (colorIndex + 1) % colors.length;
+    document.body.style.setProperty('--primary-color', colors[colorIndex]);
+    document.getElementById('color-preview').style.backgroundColor = colors[colorIndex];
+  });
+  
+  // Text animator
+  document.getElementById('text-animator').addEventListener('click', function() {
+    const textElement = document.getElementById('demo-text');
+    textElement.style.animation = 'none';
+    setTimeout(() => {
+      textElement.style.animation = 'bounce 1s ease-in-out';
+    }, 10);
+  });
+  
+  // Counter
+  document.getElementById('counter-reset').addEventListener('click', function() {
+    clickCount = 0;
+    document.getElementById('click-counter').textContent = clickCount;
+  });
+  
+  // Click counter
+  document.addEventListener('click', function() {
+    clickCount++;
+    document.getElementById('click-counter').textContent = clickCount;
+  });
+  
+  // Initialize color preview
+  document.getElementById('color-preview').style.backgroundColor = colors[0];
+});
+</script>

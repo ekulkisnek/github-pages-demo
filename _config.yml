@@ -1,0 +1,81 @@
+# GitHub Pages Demo Site Configuration
+title: "GitHub Pages Demo - Full Feature Showcase"
+description: "A comprehensive demonstration of GitHub Pages free tier capabilities"
+author: "GitHub Pages Demo"
+email: "demo@example.com"
+baseurl: "" # Leave empty for user/organization pages
+url: "" # Leave empty for user/organization pages
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+# Collections
+collections:
+  features:
+    output: true
+    permalink: /:collection/:name/
+  tutorials:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "features"
+    values:
+      layout: "feature"
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: "tutorial"
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Features"
+    url: "/features/"
+  - title: "Tutorials"
+    url: "/tutorials/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "About"
+    url: "/about/"
+
+# Social links
+social:
+  - name: "GitHub"
+    url: "https://github.com"
+  - name: "Twitter"
+    url: "https://twitter.com"
+  - name: "LinkedIn"
+    url: "https://linkedin.com"
+
+# SEO
+seo:
+  type: "WebSite"
+  locale: "en_US"
+  site_name: "GitHub Pages Demo"
+  description: "Comprehensive demonstration of GitHub Pages free tier capabilities"
+  keywords: ["GitHub Pages", "Jekyll", "Static Site", "Free Hosting", "Demo"]
