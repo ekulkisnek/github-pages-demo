@@ -3,8 +3,8 @@ title: "GitHub Pages Demo - Full Feature Showcase"
 description: "A comprehensive demonstration of GitHub Pages free tier capabilities"
 author: "GitHub Pages Demo"
 email: "demo@example.com"
-baseurl: "" # Leave empty for user/organization pages
-url: "" # Leave empty for user/organization pages
+baseurl: "/github-pages-demo" # Project Pages base path
+url: "https://ekulkisnek.github.io" # User site URL
 
 # Build settings
 markdown: kramdown

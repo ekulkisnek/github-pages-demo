@@ -530,7 +530,7 @@ bundle exec jekyll build
   <h3>Ready to Build?</h3>
   <p>Start creating your GitHub Pages site today!</p>
   <a href="https://github.com/new" class="btn btn-primary" target="_blank">Create Repository</a>
-  <a href="/features/" class="btn btn-secondary">Explore Features</a>
+  <a href="{{ '/features/' | relative_url }}" class="btn btn-secondary">Explore Features</a>
 </div>
 
 <style>

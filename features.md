@@ -212,7 +212,7 @@ Ready to build your own GitHub Pages site? Here's what you need:
 <div class="cta-section">
   <h3>Ready to Start?</h3>
   <p>Create your own GitHub Pages site in minutes!</p>
-  <a href="/tutorials/" class="btn btn-primary">View Tutorials</a>
+  <a href="{{ '/tutorials/' | relative_url }}" class="btn btn-primary">View Tutorials</a>
   <a href="https://github.com" class="btn btn-secondary" target="_blank">Get Started on GitHub</a>
 </div>
 

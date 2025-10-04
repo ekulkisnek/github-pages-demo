@@ -17,7 +17,7 @@ Stay updated with the latest GitHub Pages features, tutorials, and best practice
       <span class="post-date">January 15, 2024</span>
       <span class="post-category">Tutorial</span>
     </div>
-    <h2><a href="/blog/getting-started-with-github-pages/">Getting Started with GitHub Pages</a></h2>
+    <h2><a href="{{ '/blog/getting-started-with-github-pages/' | relative_url }}">Getting Started with GitHub Pages</a></h2>
     <p>Learn how to create your first static website using GitHub Pages in just a few minutes. This comprehensive guide covers everything from repository setup to custom domain configuration.</p>
     <div class="post-tags">
       <span class="tag">GitHub Pages</span>
@@ -31,7 +31,7 @@ Stay updated with the latest GitHub Pages features, tutorials, and best practice
       <span class="post-date">January 12, 2024</span>
       <span class="post-category">Features</span>
     </div>
-    <h2><a href="/blog/jekyll-plugins-guide/">Essential Jekyll Plugins for GitHub Pages</a></h2>
+    <h2><a href="{{ '/blog/jekyll-plugins-guide/' | relative_url }}">Essential Jekyll Plugins for GitHub Pages</a></h2>
     <p>Discover the most useful Jekyll plugins that work with GitHub Pages. From SEO optimization to social media integration, these plugins will enhance your site's functionality.</p>
     <div class="post-tags">
       <span class="tag">Jekyll</span>
@@ -45,7 +45,7 @@ Stay updated with the latest GitHub Pages features, tutorials, and best practice
       <span class="post-date">January 10, 2024</span>
       <span class="post-category">Performance</span>
     </div>
-    <h2><a href="/blog/optimizing-github-pages-performance/">Optimizing GitHub Pages Performance</a></h2>
+    <h2><a href="{{ '/blog/optimizing-github-pages-performance/' | relative_url }}">Optimizing GitHub Pages Performance</a></h2>
     <p>Learn how to make your GitHub Pages site load faster with these proven optimization techniques. From image compression to CSS minification, every detail matters.</p>
     <div class="post-tags">
       <span class="tag">Performance</span>
@@ -59,7 +59,7 @@ Stay updated with the latest GitHub Pages features, tutorials, and best practice
       <span class="post-date">January 8, 2024</span>
       <span class="post-category">Design</span>
     </div>
-    <h2><a href="/blog/responsive-design-best-practices/">Responsive Design Best Practices</a></h2>
+    <h2><a href="{{ '/blog/responsive-design-best-practices/' | relative_url }}">Responsive Design Best Practices</a></h2>
     <p>Create beautiful, mobile-friendly websites that work perfectly on all devices. This guide covers modern CSS techniques and responsive design patterns.</p>
     <div class="post-tags">
       <span class="tag">CSS</span>
@@ -73,7 +73,7 @@ Stay updated with the latest GitHub Pages features, tutorials, and best practice
       <span class="post-date">January 5, 2024</span>
       <span class="post-category">Tutorial</span>
     </div>
-    <h2><a href="/blog/github-actions-for-pages/">GitHub Actions for Automated Deployment</a></h2>
+    <h2><a href="{{ '/blog/github-actions-for-pages/' | relative_url }}">GitHub Actions for Automated Deployment</a></h2>
     <p>Set up automated builds and deployments for your GitHub Pages site using GitHub Actions. Learn how to create custom workflows and optimize your deployment process.</p>
     <div class="post-tags">
       <span class="tag">GitHub Actions</span>
@@ -87,7 +87,7 @@ Stay updated with the latest GitHub Pages features, tutorials, and best practice
       <span class="post-date">January 3, 2024</span>
       <span class="post-category">SEO</span>
     </div>
-    <h2><a href="/blog/seo-optimization-guide/">SEO Optimization for Static Sites</a></h2>
+    <h2><a href="{{ '/blog/seo-optimization-guide/' | relative_url }}">SEO Optimization for Static Sites</a></h2>
     <p>Improve your site's search engine rankings with these SEO best practices. From meta tags to structured data, learn how to make your content discoverable.</p>
     <div class="post-tags">
       <span class="tag">SEO</span>
@@ -215,9 +215,9 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Simulate search results
       const mockResults = [
-        { title: 'Getting Started with GitHub Pages', excerpt: 'Learn how to create your first static website...', url: '/blog/getting-started-with-github-pages/' },
-        { title: 'Essential Jekyll Plugins', excerpt: 'Discover the most useful Jekyll plugins...', url: '/blog/jekyll-plugins-guide/' },
-        { title: 'Performance Optimization', excerpt: 'Learn how to make your site load faster...', url: '/blog/optimizing-github-pages-performance/' }
+        { title: 'Getting Started with GitHub Pages', excerpt: 'Learn how to create your first static website...', url: '{{ '/blog/getting-started-with-github-pages/' | relative_url }}' },
+        { title: 'Essential Jekyll Plugins', excerpt: 'Discover the most useful Jekyll plugins...', url: '{{ '/blog/jekyll-plugins-guide/' | relative_url }}' },
+        { title: 'Performance Optimization', excerpt: 'Learn how to make your site load faster...', url: '{{ '/blog/optimizing-github-pages-performance/' | relative_url }}' }
       ];
       
       const filteredResults = mockResults.filter(result => 
