@@ -5,26 +5,11 @@ source "https://rubygems.org"
 # check for the latest version of this gem, you can run:
 # bundle show jekyll
 
-gem "jekyll", "~> 4.3"
-
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima", "~> 2.5"
-
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-# gem "github-pages", group: :jekyll_plugins
+// Use GitHub Pages gem which pins supported Jekyll and plugin versions
+gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
-group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-sitemap"
-  gem "jekyll-seo-tag"
-  gem "jekyll-redirect-from"
-  gem "jekyll-optional-front-matter"
-  gem "jekyll-readme-index"
-  gem "jekyll-default-layout"
-  gem "jekyll-titles-from-headings"
-end
+// Plugins are included via the github-pages gem; no explicit plugin gems needed
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
