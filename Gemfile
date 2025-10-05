@@ -5,11 +5,11 @@ source "https://rubygems.org"
 # check for the latest version of this gem, you can run:
 # bundle show jekyll
 
-// Use GitHub Pages gem which pins supported Jekyll and plugin versions
+# Use GitHub Pages gem which pins supported Jekyll and plugin versions
 gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
-// Plugins are included via the github-pages gem; no explicit plugin gems needed
+# Plugins are included via the github-pages gem; no explicit plugin gems needed
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
