@@ -120,3 +120,6 @@ fi
 
 print_success "🎉 GitHub Pages demo site deployed successfully!"
 print_status "You can now use Cursor to make changes and they will be automatically deployed."
+
+
+

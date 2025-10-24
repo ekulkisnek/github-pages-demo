@@ -531,3 +531,6 @@ The site automatically deploys when you push changes to the main branch. GitHub 
 ---
 
 **Happy coding with Cursor! 🚀**
+
+
+

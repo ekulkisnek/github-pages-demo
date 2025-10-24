@@ -13,3 +13,6 @@ Disallow: /.bundle/
 Disallow: /.sass-cache/
 Disallow: /.jekyll-cache/
 Disallow: /.jekyll-metadata
+
+
+
